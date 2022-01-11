@@ -1,0 +1,7 @@
+{% extends 'search/index.html' %}
+{% load static %}
+{% block searched %}
+{% if query %}
+    <div> your query {{ query }}</div>
+{% endif %}
+{% endblock %}
