@@ -25,3 +25,9 @@ def search(request):
             if k in ['ifsc','branch','address','city','district','state','bank_name']:
                 data[k.upper()]= v
     return render(request, 'search/search.html', {'query': data})
+
+def about(request):
+    return render(request, 'search/about.html')
+
+def contact(request):
+    return render(request, 'search/contact.html')
